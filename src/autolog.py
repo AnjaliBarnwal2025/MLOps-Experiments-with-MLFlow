@@ -46,7 +46,7 @@ with mlflow.start_run():
     plt.savefig("confusion_matrix.png")
 
     # Log confusion matrix plot as artifact
-    mlflow.log_artifact(__file__)
+    mlflow.log_artifact("confusion_matrix.png")
 
     ## Tags
     mlflow.set_tags({"Author": "Anjali", "Project Name": "Wine Classification"})
